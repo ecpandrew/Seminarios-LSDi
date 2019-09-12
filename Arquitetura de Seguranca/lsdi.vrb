@@ -1,0 +1,24 @@
+\frametitle{Inserindo Código}
+{
+\footnotesize
+\begin{scriptsize}
+\estiloJava
+\begin{lstlisting}[caption={Código Java}, label=lst:javacode]
+class PrimeThread extends Thread {
+    long minPrime;
+    PrimeThread(long minPrime) {
+        this.minPrime = minPrime;
+    }
+
+    public void run() {
+        // compute primes larger than minPrime
+        // . . .
+    }
+}
+
+ // The following code would then create a thread and start it running:
+    PrimeThread p = new PrimeThread(143);
+    p.start();
+\end{lstlisting}
+\end{scriptsize}
+}
